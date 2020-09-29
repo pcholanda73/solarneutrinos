@@ -229,7 +229,7 @@ c      close(41)
       do itg=1,ntgkl
       do idm=1,ndmkl
          read(41,*)s13kl,tgkl,dmkl,chi2kamland(is13,itg,idm)
-         akl(is13)=s13kl
+         akl(is13)=(sin(0.5*asin(sqrt(s13kl))))**2.
          akl(ns13kl+itg)=tgkl
          akl(ns13kl+ntgkl+idm)=dmkl
       enddo
