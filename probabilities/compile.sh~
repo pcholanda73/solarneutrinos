@@ -1,0 +1,2 @@
+gfortran -o p.exe probabilities.f ../subprobsun.f -lkernlib -lmathlib -lpacklib
+

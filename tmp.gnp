@@ -1,0 +1,16 @@
+#set term postscript portrait
+#set output 'chi2tot.ps'
+set style data lines
+#set logscale x
+#set nologscale y
+#set hidden3d
+set contour
+#set nogrid
+#set samples 200
+set nosurface
+set view 0,0,1,1
+set parametric
+#free B
+set cntrparam levels discrete 25.0,25.0+2.3,25.0+4.61,25.0+5.99,25.0+9.21,25.0+11.83
+splot 'fort.99' us 1:2:3
+
